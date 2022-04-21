@@ -27,7 +27,7 @@ jobs:
     steps:
       - checkout
       - run:
-          command: ech $MY_ENV_VAR
+          command: echo $MY_ENV_VAR
    
 workflows:
   print-hello-workflow:
