@@ -20,9 +20,9 @@ jobs:
       - checkout
       - run:
           name: "Print world"
-          command: "echo new World!"
+          command: "echo World"
   print-env-var:
-      docker:
+    docker:
       - image: circleci/node:13.8.0
     steps:
       - checkout
@@ -38,3 +38,4 @@ workflows:
       - print-world:
           requires:
             - print-hello
+      - print-env-var
